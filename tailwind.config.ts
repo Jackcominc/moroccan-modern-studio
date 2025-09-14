@@ -18,9 +18,9 @@ export default {
         'body': ['Inter', 'system-ui', 'sans-serif'],
       },
       spacing: {
-        'section': '6rem',
-        'component': '3rem',
-        'element': '1.5rem',
+        'section': '8rem',
+        'component': '4rem',
+        'element': '2rem',
       },
       colors: {
         border: "hsl(var(--border))",

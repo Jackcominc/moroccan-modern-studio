@@ -2,66 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional architecture firm design system - BARCODE */
+/* Minimal architecture firm design system - BARCODE */
 
 @layer base {
   :root {
-    /* Base colors - Clean architectural palette */
+    /* Base colors - Ultra minimal palette inspired by FAHRENHEIT */
     --background: 0 0% 100%;
-    --foreground: 225 15% 15%;
+    --foreground: 0 0% 0%;
 
     /* Card and surface colors */
     --card: 0 0% 100%;
-    --card-foreground: 225 15% 15%;
+    --card-foreground: 0 0% 0%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 225 15% 15%;
+    --popover-foreground: 0 0% 0%;
 
-    /* Primary - Deep charcoal for sophistication */
-    --primary: 225 15% 15%;
+    /* Primary - Pure black for maximum contrast */
+    --primary: 0 0% 0%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Architectural grey */
-    --secondary: 220 5% 96%;
-    --secondary-foreground: 225 15% 15%;
+    /* Secondary - Light grey */
+    --secondary: 0 0% 98%;
+    --secondary-foreground: 0 0% 0%;
 
     /* Muted tones for subtle elements */
-    --muted: 220 5% 96%;
-    --muted-foreground: 225 8% 45%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    /* Accent - Warm architectural tone inspired by Moroccan earth */
-    --accent: 25 15% 85%;
-    --accent-foreground: 225 15% 15%;
+    /* Accent - Minimal grey */
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 0%;
 
-    /* Architectural earth tone for highlights */
-    --architectural: 28 25% 70%;
-    --architectural-foreground: 0 0% 100%;
+    /* Architectural grey for subtle backgrounds */
+    --architectural: 0 0% 95%;
+    --architectural-foreground: 0 0% 0%;
 
-    /* Mediterranean blue for subtle accents */
-    --mediterranean: 205 50% 88%;
-    --mediterranean-foreground: 225 15% 15%;
+    /* Subtle grey for borders */
+    --mediterranean: 0 0% 90%;
+    --mediterranean-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 8% 90%;
-    --input: 220 8% 90%;
-    --ring: 225 15% 15%;
+    --border: 0 0% 92%;
+    --input: 0 0% 96%;
+    --ring: 0 0% 0%;
 
-    --radius: 0.125rem;
+    --radius: 0rem;
 
-    /* Typography scale */
+    /* Typography scale - minimal and clean */
     --font-heading: 'Inter', system-ui, sans-serif;
     --font-body: 'Inter', system-ui, sans-serif;
 
-    /* Spacing scale for architectural precision */
-    --space-section: 6rem;
-    --space-component: 3rem;
-    --space-element: 1.5rem;
+    /* Spacing scale for minimal design */
+    --space-section: 8rem;
+    --space-component: 4rem;
+    --space-element: 2rem;
 
-    /* Transitions for refined interactions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-gentle: all 0.2s ease-out;
+    /* Transitions for subtle interactions */
+    --transition-smooth: all 0.2s ease-out;
+    --transition-gentle: all 0.15s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
