@@ -1,58 +1,44 @@
+import { Link, useLocation } from "react-router-dom";
+
 const Navigation = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
+  const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm">
+    <nav className="bg-background border-b border-border">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-20">
-          <button 
-            onClick={() => scrollToSection('home')}
+          <Link 
+            to="/"
             className="font-heading font-normal text-xl text-primary tracking-wider"
           >
             BARCODE
-          </button>
+          </Link>
           
-          <div className="hidden md:flex items-center space-x-16">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="font-heading text-xs tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className="font-heading text-xs tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase"
-            >
-              Projects
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="font-heading text-xs tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase"
+          <div className="flex items-center space-x-16">
+            <Link 
+              to="/about"
+              className={`font-heading text-xs tracking-widest transition-colors uppercase ${
+                location.pathname === '/about' ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              }`}
             >
               About
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="font-heading text-xs tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase"
+            </Link>
+            <Link 
+              to="/works"
+              className={`font-heading text-xs tracking-widest transition-colors uppercase ${
+                location.pathname === '/works' ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              }`}
+            >
+              Works
+            </Link>
+            <Link 
+              to="/contact"
+              className={`font-heading text-xs tracking-widest transition-colors uppercase ${
+                location.pathname === '/contact' ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              }`}
             >
               Contact
-            </button>
-          </div>
-          
-          <div className="md:hidden">
-            <button className="text-primary">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
