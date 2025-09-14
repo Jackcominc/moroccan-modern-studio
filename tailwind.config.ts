@@ -13,6 +13,15 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'heading': ['Inter', 'system-ui', 'sans-serif'],
+        'body': ['Inter', 'system-ui', 'sans-serif'],
+      },
+      spacing: {
+        'section': '6rem',
+        'component': '3rem',
+        'element': '1.5rem',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +55,14 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        architectural: {
+          DEFAULT: "hsl(var(--architectural))",
+          foreground: "hsl(var(--architectural-foreground))",
+        },
+        mediterranean: {
+          DEFAULT: "hsl(var(--mediterranean))",
+          foreground: "hsl(var(--mediterranean-foreground))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
