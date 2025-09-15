@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import barcodeBg from "../assets/barcode-bg.png";
 
 const Navigation = () => {
   const location = useLocation();
@@ -9,9 +10,20 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <Link 
             to="/"
-            className="font-helvetica font-normal text-3xl text-primary tracking-wider"
+            className="font-helvetica font-normal text-3xl text-primary tracking-wider relative overflow-hidden group transition-all duration-300"
           >
-            BARCODE
+            <div 
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              style={{
+                backgroundImage: `url(${barcodeBg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}
+            />
+            <span className="relative z-10 group-hover:bg-background group-hover:px-0.5 group-hover:py-0.5 transition-all duration-300">
+              BARCODE
+            </span>
           </Link>
           
           <div className="flex items-center space-x-16">
