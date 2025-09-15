@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-heading font-bold text-xl text-primary mb-4">BARCODE</h3>
+            <h3 className="font-helvetica font-bold text-xl text-primary mb-4">BARCODE</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Innovative architectural design studio<br />
               creating contemporary spaces that<br />
@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-heading font-medium text-primary mb-4">Office</h4>
+            <h4 className="font-helvetica font-medium text-primary mb-4">Office</h4>
             <address className="text-muted-foreground text-sm not-italic leading-relaxed">
               Architecture Studio<br />
               Tangiers, Morocco<br />
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-heading font-medium text-primary mb-4">Services</h4>
+            <h4 className="font-helvetica font-medium text-primary mb-4">Services</h4>
             <ul className="text-muted-foreground text-sm space-y-2">
               <li>Architectural Design</li>
               <li>Interior Design</li>
