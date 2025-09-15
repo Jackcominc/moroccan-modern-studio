@@ -13,7 +13,7 @@ const Navigation = () => {
             className="font-helvetica font-normal text-3xl text-primary tracking-wider relative overflow-hidden group transition-all duration-300"
           >
             <div 
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2"
               style={{
                 backgroundImage: `url(${barcodeBg})`,
                 backgroundSize: 'cover',
@@ -21,7 +21,7 @@ const Navigation = () => {
                 backgroundRepeat: 'no-repeat'
               }}
             />
-            <span className="relative z-10 group-hover:bg-background group-hover:px-0.5 group-hover:py-0.5 transition-all duration-300">
+            <span className="relative z-10 group-hover:bg-white group-hover:px-2 group-hover:py-1 transition-all duration-300">
               BARCODE
             </span>
           </Link>
