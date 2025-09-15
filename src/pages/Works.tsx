@@ -21,37 +21,26 @@ const Works = () => {
   ];
 
   return (
-    <main>
-      {/* Hero Section */}
-      <section className="container mx-auto px-6 py-32">
-        <div className="max-w-2xl mx-auto text-center space-y-12">
-          <h1 className="font-heading font-light text-6xl text-primary tracking-wide">
+    <div className="flex-1 flex items-center justify-center">
+      <div className="container mx-auto px-6 text-center">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <h1 className="font-heading font-light text-7xl md:text-8xl lg:text-9xl text-primary tracking-wide">
             Works
           </h1>
-        </div>
-      </section>
-
-      {/* Portfolio Grid */}
-      <section className="container mx-auto px-6 pb-32">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-1 max-w-6xl mx-auto">
-          {projects.map((project) => (
-            <article key={project.id} className="group cursor-pointer">
-              <div className="aspect-[4/5] bg-secondary border border-border group-hover:border-primary transition-colors"></div>
-              
-              <div className="p-6 space-y-2">
-                <div className="flex justify-between items-start">
-                  <h3 className="font-heading font-light text-sm text-primary">
-                    {project.title}
-                  </h3>
-                  <span className="text-muted-foreground text-xs">{project.year}</span>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
+            {projects.map((project) => (
+              <div key={project.id} className="text-center space-y-4">
+                <h3 className="font-heading font-light text-base text-primary">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">{project.year}</p>
                 <p className="text-muted-foreground text-xs tracking-wide uppercase">{project.category}</p>
               </div>
-            </article>
-          ))}
+            ))}
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
   );
 };
 
