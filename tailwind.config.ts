@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         'heading': ['Inter', 'system-ui', 'sans-serif'],
         'body': ['Inter', 'system-ui', 'sans-serif'],
+        'helvetica': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
       spacing: {
         'section': '8rem',
