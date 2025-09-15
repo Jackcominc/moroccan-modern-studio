@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <footer className="bg-background">
-      <div className="container mx-auto px-12 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-12 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="font-helvetica font-bold text-xl text-primary mb-4">BARCODE</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -26,21 +26,11 @@ const Footer = () => {
               </a>
             </address>
           </div>
-          
-          <div>
-            <h4 className="font-helvetica font-medium text-primary mb-4">Services</h4>
-            <ul className="text-muted-foreground text-sm space-y-2">
-              <li>Architectural Design</li>
-              <li>Interior Design</li>
-              <li>Urban Planning</li>
-              <li>Project Management</li>
-            </ul>
-          </div>
         </div>
         
-        <div className="mt-12 pt-8">
+        <div className="mt-8 pt-6">
           <p className="text-muted-foreground text-sm text-center">
-            © 2024 BARCODE Architecture Studio. All rights reserved.
+            BARCODE {new Date().getFullYear()} ©
           </p>
         </div>
       </div>
