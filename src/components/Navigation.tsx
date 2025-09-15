@@ -4,9 +4,9 @@ const Navigation = () => {
   const location = useLocation();
 
   return (
-    <nav className="bg-background border-b border-border">
+    <nav className="bg-background">
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex items-center h-20">
           <Link 
             to="/"
             className="font-heading font-normal text-xl text-primary tracking-wider"
@@ -14,7 +14,7 @@ const Navigation = () => {
             BARCODE
           </Link>
           
-          <div className="flex items-center space-x-16">
+          <div className="flex items-center space-x-16 mx-auto">
             <Link 
               to="/about"
               className={`font-heading text-xs tracking-widest transition-colors uppercase ${

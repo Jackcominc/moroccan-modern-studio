@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-secondary border-t border-border">
+    <footer className="bg-background">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-border mt-12 pt-8">
+        <div className="mt-12 pt-8">
           <p className="text-muted-foreground text-sm text-center">
             © 2024 BARCODE Architecture Studio. All rights reserved.
           </p>
