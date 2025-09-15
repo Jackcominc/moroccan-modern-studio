@@ -17,24 +17,30 @@ const Navigation = () => {
           <div className="flex items-center space-x-16 mx-auto">
             <Link 
               to="/about"
-              className={`font-heading text-xs tracking-widest transition-colors uppercase ${
-                location.pathname === '/about' ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              className={`font-heading text-lg font-bold tracking-widest transition-all duration-300 uppercase px-4 py-2 rounded ${
+                location.pathname === '/about' 
+                  ? 'text-primary bg-black text-white' 
+                  : 'text-muted-foreground hover:bg-black hover:text-white'
               }`}
             >
               About
             </Link>
             <Link 
               to="/works"
-              className={`font-heading text-xs tracking-widest transition-colors uppercase ${
-                location.pathname === '/works' ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              className={`font-heading text-lg font-bold tracking-widest transition-all duration-300 uppercase px-4 py-2 rounded ${
+                location.pathname === '/works' 
+                  ? 'text-primary bg-black text-white' 
+                  : 'text-muted-foreground hover:bg-black hover:text-white'
               }`}
             >
               Works
             </Link>
             <Link 
               to="/contact"
-              className={`font-heading text-xs tracking-widest transition-colors uppercase ${
-                location.pathname === '/contact' ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              className={`font-heading text-lg font-bold tracking-widest transition-all duration-300 uppercase px-4 py-2 rounded ${
+                location.pathname === '/contact' 
+                  ? 'text-primary bg-black text-white' 
+                  : 'text-muted-foreground hover:bg-black hover:text-white'
               }`}
             >
               Contact
