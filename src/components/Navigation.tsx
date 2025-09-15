@@ -5,8 +5,8 @@ const Navigation = () => {
 
   return (
     <nav className="bg-background">
-      <div className="container mx-auto px-6">
-        <div className="flex items-center h-20">
+      <div className="container mx-auto px-12">
+        <div className="flex items-center justify-between h-20">
           <Link 
             to="/"
             className="font-helvetica font-normal text-3xl text-primary tracking-wider"
@@ -14,7 +14,7 @@ const Navigation = () => {
             BARCODE
           </Link>
           
-          <div className="flex items-center space-x-16 mx-auto">
+          <div className="flex items-center space-x-16">
             <Link 
               to="/about"
               className={`font-helvetica text-lg font-bold tracking-widest transition-all duration-300 uppercase px-2 py-1 ${
