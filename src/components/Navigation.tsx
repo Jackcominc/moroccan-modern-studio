@@ -34,7 +34,7 @@ const Navigation = () => {
               }}
             />
             
-            <span className="relative z-10 group-hover:bg-white transition-all duration-150 ease-out px-2 py-1">
+            <span className="relative z-10 group-hover:bg-white group-hover:px-2 group-hover:py-1 transition-all duration-150 ease-out">
               BARCODE
             </span>
           </Link>
