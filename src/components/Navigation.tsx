@@ -14,7 +14,7 @@ const Navigation = () => {
           >
             {/* Top barcode strip */}
             <div 
-              className="absolute -top-3 left-0 w-full h-6 opacity-0 group-hover:opacity-100"
+              className="absolute -top-3 left-0 w-full h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-out"
               style={{
                 backgroundImage: `url(${barcodeBg})`,
                 backgroundSize: 'cover',
@@ -25,7 +25,7 @@ const Navigation = () => {
             
             {/* Bottom barcode strip */}
             <div 
-              className="absolute -bottom-3 left-0 w-full h-6 opacity-0 group-hover:opacity-100"
+              className="absolute -bottom-3 left-0 w-full h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-out"
               style={{
                 backgroundImage: `url(${barcodeBg})`,
                 backgroundSize: 'cover',
@@ -34,7 +34,7 @@ const Navigation = () => {
               }}
             />
             
-            <span className="relative z-10 group-hover:bg-white group-hover:px-2 group-hover:py-1">
+            <span className="relative z-10 group-hover:bg-white group-hover:px-2 group-hover:py-1 transition-all duration-150 ease-out">
               BARCODE
             </span>
           </Link>
