@@ -10,17 +10,30 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <Link 
             to="/"
-            className="font-helvetica font-normal text-3xl text-primary tracking-wider relative overflow-hidden group transition-all duration-300"
+            className="font-helvetica font-normal text-3xl text-primary tracking-wider relative group transition-all duration-300"
           >
+            {/* Top barcode strip */}
             <div 
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2"
+              className="absolute -top-3 left-0 w-full h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{
                 backgroundImage: `url(${barcodeBg})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundPosition: 'top',
                 backgroundRepeat: 'no-repeat'
               }}
             />
+            
+            {/* Bottom barcode strip */}
+            <div 
+              className="absolute -bottom-3 left-0 w-full h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              style={{
+                backgroundImage: `url(${barcodeBg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'bottom',
+                backgroundRepeat: 'no-repeat'
+              }}
+            />
+            
             <span className="relative z-10 group-hover:bg-white group-hover:px-2 group-hover:py-1 transition-all duration-300">
               BARCODE
             </span>
